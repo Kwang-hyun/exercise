@@ -13,13 +13,11 @@ public class ATM {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("사람의 수를 입력하세요.");
 		num = sc.nextInt(); 
 		
 		personal_time = new int[num];
 		
 		for(int i = 0; i < num; i++) {
-			System.out.printf("%d번쨰 사람이 걸리는 시간을 입력하세요", i + 1);
 			personal_time[i] = sc.nextInt();
 		}
 		
@@ -40,8 +38,7 @@ public class ATM {
 			}
 		}
 		
-		System.out.println("각 사람이 돈을 인출하는데 필요한 시간의 합의 최솟값은" + result + "분 입니다.");
-			
+		System.out.println(result);	
 	}
 	
 	public static void swap(int temp1, int temp2) { //배열 위치바꾸기 swap 함수 구현
